@@ -2,66 +2,65 @@
 \usepackage[utf8]{inputenc}	% Pakiet pozwalający kodować znaki diakrytyczne w różnych wariantach - https://ctan.org/pkg/inputenc
 \usepackage{polski} 		% Pakiet dodający język polski - https://ctan.org/pkg/polski
 \usepackage{graphicx}		% Pakiet oferujący dodatkowe funkcje przy dodawaniu grafik - https://ctan.org/pkg/graphicx
-\usepackage{setspace}		% Pakiet zapewniający dodatkowe ustawienia odstępów między liniami w dokumencie - https://ctan.org/pkg/setspace
+\usepackage{setspace}		% Pakiet zapewniający dodatkowe ustawienia odstępów w dokumencie - https://ctan.org/pkg/setspace
 
 \usepackage[]{hyperref}		% Pakiet umożliwiający dodatkowe ustawienia pliku pdf - https://ctan.org/pkg/hyperref
-\usepackage{xcolor}			% Pakiet dodający dodatkowe ustawienia kolorów - https://ctan.org/pkg/xcolor
+\usepackage{xcolor}		% Pakiet dodający dodatkowe ustawienia kolorów - https://ctan.org/pkg/xcolor
 \usepackage{makeidx}		% Pakiet umożliwiający tworzenie indeksów - https://ctan.org/pkg/makeidx
 
 	%------------------------------------------------------------------------------%
 					% Do uzupełnienia %
 	%------------------------------------------------------------------------------%
 
-\onehalfspacing				% Ustawienie pojedynczego odstępu między linijkami.
+\onehalfspacing			% Ustawienie pojedynczego odstępu między linijkami.
 \setlength{\parindent}{1.25cm}	% Rozmiar wcięcia akapitów.
 \renewcommand{\labelitemi}{$\bullet$} % Ustawienie kropki jako punktatora listy {itemize}.
 
-% \title{\vspace{-3.5cm}} % - Jeżeli nie podajesz autora i daty, warto podnieść tytuł wyżej.
 \title{Wyznaczanie ogniskowej soczewki skupiającej} 
 \author{JanekR\underline{\hspace{0.2cm}}Prorok}
 \date{\today}
 
 \definecolor{orangelink}{rgb}{0.7,0.18,0.1} % Zdefiniowany własny kolor - tu wykorzystany do linków.
 	
-\hypersetup{					% Ustawienia pliku pdf - http://www.tug.org/applications/hyperref/manual.html#x1-120003.8
+\hypersetup{			% Ustawienia pliku pdf - http://www.tug.org/applications/hyperref/manual.html#x1-120003.8
     pdftitle={Wyznaczanie ogniskowej soczewki skupiającej}, % title
     pdfdisplaydoctitle=true,	% display document title instead of file name in title bar
     pdfauthor={JanekR_Prorok},	% author
-    pdfsubject={},				% subject of the document
+    pdfsubject={},		% subject of the document
     pdfcreator={Texmaker, MiKTeX}, % creator of the document
-    pdfproducer={},				% producer of the document
-    pdfinfo={},					% Alternative interface for setting the document information
-    pdfkeywords={},				% list of keywords    
-    bookmarks=true,				% show bookmarks bar?
+    pdfproducer={},		% producer of the document
+    pdfinfo={},			% Alternative interface for setting the document information
+    pdfkeywords={},		% list of keywords    
+    bookmarks=true,		% show bookmarks bar?
     bookmarksnumbered=true,     % put section numbers in bookmarks
     bookmarksopen=true,       	% open up bookmark tree
-    bookmarksopenlevel=1,		% level to which bookmarks are open
-    pdfpagelabels=true,			% set PDF page labels                   
+    bookmarksopenlevel=1,	% level to which bookmarks are open
+    pdfpagelabels=true,		% set PDF page labels                   
     pdfpagemode=UseOutlines,	% Determines how the file is opening in Acrobat; the possibilities are UseNone, UseThumbs (show thumbnails), UseOutlines (show bookmarks), FullScreen, UseOC (PDF 1.5), and UseAttachments (PDF 1.6). If no mode if explicitly chosen, but the bookmarks option is set, UseOutlines is used.
-    unicode=true,				% non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,			% show Acrobat’s toolbar?
-    pdfmenubar=true,			% show Acrobat’s menu?
-    pdffitwindow=false,			% window fit to page when opened
-    pdfstartview=Fit,			% fits the width of the page to the window
-    pdfnewwindow=true,			% links in new PDF window
-    colorlinks=true,			% false: boxed links; true: colored links
-    linkcolor=orangelink,		% color of internal links (change box color with linkbordercolor)
-    citecolor=orangelink,		% color of links to bibliography
-    filecolor=orangelink,		% color of file links
-    urlcolor=orangelink,		% color of external links
+    unicode=true,		% non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,		% show Acrobat’s toolbar?
+    pdfmenubar=true,		% show Acrobat’s menu?
+    pdffitwindow=false,		% window fit to page when opened
+    pdfstartview=Fit,		% fits the width of the page to the window
+    pdfnewwindow=true,		% links in new PDF window
+    colorlinks=true,		% false: boxed links; true: colored links
+    linkcolor=orangelink,	% color of internal links (change box color with linkbordercolor)
+    citecolor=orangelink,	% color of links to bibliography
+    filecolor=orangelink,	% color of file links
+    urlcolor=orangelink,	% color of external links
     pdfpagelayout=OneColumn,	% set layout of PDF pages
-    % pdfstartpage=1,			% page at which PDF document opens
-    % pdfnumcopies=,			% number of printed copies
-    % filebordercolor=,			% color of border around file links
-    % filecolor=,				% color of file links
-    % linkbordercolor=,			% color of border around links
-    % menubordercolor=,			% color of border around menu links
-    % menucolor=,				% color for menu links
-    % pagebackref=,				% backreference by page number
+    % pdfstartpage=1,		% page at which PDF document opens
+    % pdfnumcopies=,		% number of printed copies
+    % filebordercolor=,		% color of border around file links
+    % filecolor=,		% color of file links
+    % linkbordercolor=,		% color of border around links
+    % menubordercolor=,		% color of border around menu links
+    % menucolor=,		% color for menu links
+    % pagebackref=,		% backreference by page number
     % pdfcenterwindow=false,	% position the document window in the center of the screen
-    % pdfdirection=,			% direction setting   
-    % baseurl=,					% Sets the base URL of the PDF document
-    % pdftrapped=,				% Sets the document information Trapped entry. Possible values are True, False and Unknown. An empty value means, the entry is not set.
+    % pdfdirection=,		% direction setting   
+    % baseurl=,			% Sets the base URL of the PDF document
+    % pdftrapped=,		% Sets the document information Trapped entry. Possible values are True, False and Unknown. An empty value means, the entry is not set.
 }
 
 % The pdfpagelayout can be one of the following values.
@@ -72,17 +71,12 @@
 	% TwoPageLeft	- Displays two pages, odd-numbered pages to the left (since PDF 1.5).
 	% TwoPageRight - Displays two pages, odd-numbered pages to the right (since PDF 1.5).
 % Dokumentacja: http://www.tug.org/applications/hyperref/manual.html
-		
-	% Znak wodny - WERSJA ROBOCZA %
-% \usepackage[printwatermark]{xwatermark}
-% \newwatermark*[allpages,angle=45,scale=3,xpos=0,ypos=0]{Wersja robocza} % \newwatermark* jest wyświetlany nad grafiką
 
-	%------------------------------------------------------------------------------%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{document}
 % \sloppy - Wymuszenie nieprofesjonalnego trzymania się w marginesach (kosztem dziwnie rozciągniętych odstępów).
-% \maketitle % - Nieraz są z tym problemy. Wersja opcjonalna poniżej.
-%
+
 	\begin{center}
 	 	\LARGE{\textbf{Wyznaczanie ogniskowej soczewki skupiającej}}\\ \medskip
  		\small{JanekR\underline{\hspace{0.2cm}}Prorok}
